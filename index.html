@@ -139,13 +139,14 @@
     background: var(--gold);
   }
   .hero-name {
-     font-family: 'Playfair Display', serif;
+    font-family: 'Playfair Display', serif;
     font-size: clamp(2.8rem, 5.5vw, 5rem);
     font-weight: 900;
-    line-height: 0.92;
+    line-height: 1;
     letter-spacing: -0.03em;
     margin-bottom: 2rem;
     color: var(--ink);
+    white-space: nowrap;
   }
   .hero-name em {
     font-style: italic;
@@ -832,7 +833,7 @@
 <section id="home" class="hero" style="padding:0; max-width:100%;">
   <div class="hero-left">
     <div class="hero-eyebrow">Full Stack Developer · AI Enthusiast</div>
-    <h1 class="hero-name">Rajesh<br><em>wari</em></h1>
+    <h1 class="hero-name">Rajesh<em>wari</em></h1>
     <p class="hero-tagline">Computer Science Engineer building scalable, impactful solutions — from AI-driven missing person finders to rural empowerment portals.</p>
     <div class="hero-ctas">
       <a href="#projects" class="btn-primary"><span>View Projects</span> <span>→</span></a>
@@ -1137,9 +1138,9 @@
       <div class="section-title">Let's build something together.</div>
       <p class="contact-tagline">I'm open to internships, full-time roles, and collaboration on meaningful projects. Reach out — I'd love to connect.</p>
       <div class="contact-links">
-        <a href="mailto:rajeshwarimyagalamani@gmail.com" class="contact-link-row">
+        <a href="/cdn-cgi/l/email-protection#fb899a919e88938c9a899296829a9c9a979a969a9592bb9c969a9297d5989496" class="contact-link-row">
           <span class="cl-label">Email</span>
-          <span class="cl-value">rajeshwarimyagalamani@gmail.com</span>
+          <span class="cl-value"><span class="__cf_email__" data-cfemail="691b08030c1a011e081b000410080e08050804080700290e04080005470a0604">[email&#160;protected]</span></span>
           <span class="cl-arrow">↗</span>
         </a>
         <a href="tel:+918296184099" class="contact-link-row">
@@ -1196,7 +1197,7 @@
   <span class="footer-copy">© 2025 · Full Stack Developer · AI Enthusiast</span>
 </footer>
 
-<script>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
   // Custom cursor
   const cursor = document.getElementById('cursor');
   const ring = document.getElementById('cursorRing');
@@ -1218,13 +1219,4 @@
   const obs = new IntersectionObserver((entries) => {
     entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); obs.unobserve(e.target); } });
   }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
-  reveals.forEach(r => obs.observe(r));
-
-  // Nav scroll effect
-  const nav = document.querySelector('nav');
-  window.addEventListener('scroll', () => {
-    nav.style.boxShadow = window.scrollY > 60 ? '0 4px 20px rgba(0,0,0,0.08)' : 'none';
-  });
-</script>
-</body>
-</html>
+  reve
